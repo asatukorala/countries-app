@@ -1,11 +1,15 @@
-     
 require 'sinatra'
-require 'httparty'
+require 'bcrypt'
+require './db/db'
 require 'dotenv/load'
 
-get '/' do
-  erb :index
-end
+enable :sessions
+
+require './controllers/countries_controller'
+require './controllers/users_controller'
+require './controllers/sessions_controller'
+
+require './helpers/sessions_helper'
 
 
 
