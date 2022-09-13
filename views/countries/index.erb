@@ -1,0 +1,41 @@
+<h1>Countries App</h1>
+
+<% if logged_in? %>
+    <h2>Welcome to Countries App <%= current_user['first_name'] %></h2>
+
+    <section class="controls">
+        <form action="/sessions" method="POST">
+            <input type="hidden" name="_method" value="delete">
+            <button>Logout</button>
+        </form>
+
+        <a href="/countries/new">Add Country</a>
+    </section>
+
+    <section class="countries">
+        <% countries.each do |country| %>
+            <section class="country">
+                <header>
+                    <h2><%= country['name'] %></h2>
+
+                    <section class="controls">
+                        <a href="/countries/<%= country['id'] %>/edit">Edit</a>
+                        
+                        <form action="/countries/<%= country['id'] %>" method="POST">
+                            <input type="hidden" name="_method" value="delete">
+                            <button>Delete</button>
+                        </form>
+                    </section>
+                </header>
+
+                <img src="<%= country['image_url'] %>" alt="">
+                <p>Capital: <%= country['capital'] %></p>
+                <p>Area: <%=country['area'] %></p>
+                <p>Population: <%=country['population'] %></p>
+            </section>
+        <% end %>
+    </section>
+<% else %>
+    <a href="/users/new">Sign Up</a>
+    <a href="/sessions/new">Login</a>
+<% end %>

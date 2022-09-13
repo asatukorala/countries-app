@@ -1,9 +1,9 @@
-require './models/countries'
+require './models/country'
 
 get '/' do
     countries = all_countries()
 
-    erb :'countries/index', local: {
+    erb :'countries/index', locals: {
         countries: countries 
     }
 end
@@ -24,7 +24,7 @@ post '/countries' do
     redirect '/'
 end
 
-get 'countries/:id/edit' do
+get '/countries/:id/edit' do
     id = params['id']
     country = get_country(id)
 

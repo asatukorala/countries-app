@@ -1,0 +1,21 @@
+<h1>Edit Country</h1>
+<form action="/countries/<%= country['id'] %>" method="POST">
+    <input type="hidden" name="_method" value="put">
+
+    <label for="">Name: </label>   
+    <input type="text" name="name" value="<%= country['name'] %>">
+    
+    <label for="">Image URL: </label>
+    <input type="text" name="image_url" value="<%= country['image_url'] %>">
+
+    <label for="">Capital: </label>
+    <input type="text" name="capital" value="<%= country['capital'] %>">
+    
+    <label for="">Area: </label>
+    <input type="text" name="area" value="<%= country['area'] %>">
+
+    <label for="">Population: </label>
+    <input type="text" name="population" value="<%= country['population'] %>">
+
+    <button>Update Country</button>
+</form>
