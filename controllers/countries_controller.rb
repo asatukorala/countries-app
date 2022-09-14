@@ -13,7 +13,28 @@ get '/countries/new' do
 end
 
 get '/countries/compare' do
+    p "compare"
+    country_1 = params['country_1']
+    country_2 = params['country_2']
+
+    p country_1   
     erb :'countries/compare'
+end
+
+post '/countries/results' do
+    country = []
+    pop = []
+    country[0] = params['country_1']
+    country[1] = params['country_2']
+
+    pop[0] = get_population(country[0])
+    pop[1] = get_population(country[1])
+
+    p "results"
+    p country
+    erb :'countries/results', locals: {
+        country: country, pop: pop
+    }
 end
 
 post '/countries' do
@@ -55,12 +76,3 @@ delete '/countries/:id' do
     delete_country(id)
     redirect '/'
 end
-
-# I'm including the likes section, but I'm not sure if I want to include it.
-# post '/countries/:id/likes' do
-#     country_id = params['id']
-#     user_id = session['user_id']
-    
-#     run_sql("INSERT INTO likes(user_id, country_id) VALUES($1, $2)", [user_id, country_id])
-#     redirect '/'
-# end
