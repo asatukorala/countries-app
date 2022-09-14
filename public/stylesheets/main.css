@@ -3,7 +3,7 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
     background-color: coral;
 }
 
@@ -20,6 +20,7 @@ button {
     padding: 0.25rem 0.5rem;
     background-color: rgb(212, 41, 41);
     color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
     font-size: 0.8rem;
     text-decoration: none;
     cursor: pointer;

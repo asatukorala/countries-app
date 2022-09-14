@@ -28,4 +28,9 @@ CREATE TABLE users(
 
 ALTER TABLE users ADD COLUMN password_digest TEXT;
 
+-- This is SQL code I am considering including. I wonder if it could may clash with the previous SQL statement.  
+ALTER TABLE users 
+ADD CONSTRAINT unique_users
+UNIQUE (email);
+
 -- I won't create the likes table. If I decide to use it, I can look schema.sql from food truck. 
