@@ -13,11 +13,9 @@ get '/countries/new' do
 end
 
 get '/countries/compare' do
-    p "compare"
     country_1 = params['country_1']
     country_2 = params['country_2']
-
-    p country_1   
+  
     erb :'countries/compare'
 end
 
@@ -30,8 +28,6 @@ post '/countries/results' do
     pop[0] = get_population(country[0])
     pop[1] = get_population(country[1])
 
-    p "results"
-    p country
     erb :'countries/results', locals: {
         country: country, pop: pop
     }
