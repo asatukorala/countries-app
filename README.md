@@ -24,6 +24,21 @@ I will use the Food Truck App as the guide.
 Initially develop in localhost and debug. Once it functions properly, post it to the Internet. 
 
 ## Technical Notes
+[Click here](https://github.com/asatukorala/countries-app) to read code on GitHub. 
+
+Wireframes of Countries App: 
+![wireframes](https://github.com/asatukorala/countries-app/blob/main/wireframes.JPG?raw=true)
+
+Trello Board 13/09:
+![trelloboard1309](https://github.com/asatukorala/countries-app/blob/main/Trello%20Board.jpg?raw=true)
+
+Trello Board 14/09 morning:
+![trelloboard1409a](https://github.com/asatukorala/countries-app/blob/main/Trello%20Board%201409%20Morning.jpg?raw=true)
+
+Trello Board 14/09 night:
+![trelloboard1409b](https://github.com/asatukorala/countries-app/blob/main/Trello%20Board%201409%20Night.jpg?raw=true)
+
+Note: I didn't include design diagrams due to time constraints and as I believe the wireframes cover it. 
 
 # :rocket: Cool tech
 This CRUD app utilises HTML content with CSS layout. Ruby code is used with an SQL database in the Sinatra framework. 
