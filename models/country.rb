@@ -17,3 +17,13 @@ end
 def delete_country(id)
     run_sql("DELETE FROM countries WHERE id = $1", [id])
 end
+
+# def compare_area(id)
+#     run_sql("SELECT capital FROM countries WHERE id = $1")
+# run_sql("SELECT capital FROM countries WHERE id = $2")
+# end
+
+# def compare_population(id)
+# run_sql("SELECT population FROM countries WHERE id = $1")
+#     run_sql("SELECT population FROM countries WHERE id = $2")
+# end

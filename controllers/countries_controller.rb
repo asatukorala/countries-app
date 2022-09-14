@@ -12,6 +12,10 @@ get '/countries/new' do
     erb :'countries/new'
 end
 
+get '/countries/compare' do
+    erb :'countries/compare'
+end
+
 post '/countries' do
     name = params['name']
     image_url = params['image_url']
