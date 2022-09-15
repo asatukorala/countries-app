@@ -21,3 +21,7 @@ end
 def get_population(name)
     run_sql("SELECT population FROM countries WHERE name = $1",[name])[0]
 end
+
+def get_area(name)
+    run_sql("SELECT area FROM countries WHERE name = $1",[name])[0]
+end

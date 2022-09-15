@@ -22,14 +22,18 @@ end
 post '/countries/results' do
     country = []
     pop = []
+    area = []
     country[0] = params['country_1']
     country[1] = params['country_2']
 
     pop[0] = get_population(country[0])
     pop[1] = get_population(country[1])
+    
+    area[0] = get_area(country[0])
+    area[1] = get_area(country[1])
 
     erb :'countries/results', locals: {
-        country: country, pop: pop
+        country: country, pop: pop, area: area
     }
 end
 

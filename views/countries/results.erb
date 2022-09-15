@@ -1,4 +1,6 @@
 <h1>Comparison Results</h1>
-<p><%= country[0] %>'s population is <%= pop[0]['population'] %>, <%= country[1] %>'s population is <%= pop[1]['population'] %></p>
-<p>Population ratio <%= country[0] %> / <%= country[1] %> = <%= pop[0]['population'].to_f/pop[1]['population'].to_f %> </p>
+<p><%= country[0] %>'s population is <%= pop[0]['population'] %>, <%= country[1] %>'s population is <%= pop[1]['population'] %>.</p>
+<p>Population ratio of <%= country[0] %> / <%= country[1] %> = <%= pop[0]['population'].to_f/pop[1]['population'].to_f %></p>
+<p><%= country[0] %>'s area is <%= area[0]['area'] %> sq km, <%= country[1] %>'s area is <%= area[1]['area'] %> sq km.</p>
+<p>Area ratio of <%= country[0] %> / <%= country[1] %> = <%= area[0]['area'].to_f/area[1]['area'].to_f %></p>
 <a href="/ <% logged_in? %>">Back</a>
