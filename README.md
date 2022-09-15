@@ -46,7 +46,7 @@ This CRUD app utilises HTML content with CSS layout. Ruby code is used with an S
 # :anguished: Bugs to fix :
 I based this app on the Food Truck App and many errors came due to me mistakenly typing information based on food or general mistakes I made. Time was spent debugging errors that came as a reesult of this. Some of these errors were easier to debug than others. There were also some bugs which weren't error messages, but it was doing nothing or the wrong task. 
 
-Writing the Compare option was more difficult than expected, with many bugs coming as a result of it. These bugs resulted in the Compare option having less features than I intended.
+Writing the Compare option was more difficult than expected, with many bugs coming as a result of it. These bugs resulted in the Compare option being simpler than I intended.
 
 # :persevere: Lessons learnt
 Have better goals to finish sections earlier.
@@ -56,6 +56,5 @@ Have better goals to finish sections earlier.
 - Formatting the large numbers of area and population to display better.
 - Have Compare results come on the same page.
 - Have a dropdown option when selecting countries to compare.
-- Have an area comparison.
 - Calculate percentage differences in the Compare option. 
 - Find a way to insert a Patch request.
