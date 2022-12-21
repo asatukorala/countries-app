@@ -50,3 +50,13 @@ button {
     white-space: nowrap;
     text-overflow: ellipsis;
 }
+
+.aligned_form {
+    display: flex;
+    justify-content: flex-end;
+    padding: .5em;
+}
+
+.aligned_form > input {
+    flex: 1;
+}
